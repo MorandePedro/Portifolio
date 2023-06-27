@@ -3,8 +3,6 @@ body {
 
     background: linear-gradient(332deg,rgb(58, 58, 58) 20%,
      rgb(34, 34, 34) 80%);
-    height: 100vh;
-    width: 100vw;
     background-repeat: no-repeat;
 }
 
@@ -98,20 +96,54 @@ body {
     float: right;
 } 
 
+#professional {
+    font-size: 20px;
+}
+
+#reachme {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+}
+
+#contact_links {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+}
+
 #insta {
     width: max-content;
     margin: auto;
-    float: left;
+    display: inline-block;
 }
 
-#linkedin {
-    width: max-content;
+#insta_logo {
+    height: 40px; 
+    width: 40px;
     margin: auto;
-
 }
 
 #github {
     width: max-content;
-    float: right;
     margin: auto;
+    display: inline-block;
+}
+
+#github_logo {
+    height: 40px; 
+    width: 40px;
+    margin: auto;
+}
+
+#linkedin {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    display: inline-block;
+}
+
+#linkedin_logo {
+    height: 40px; 
+    width: 40px;
 }
