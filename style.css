@@ -217,20 +217,22 @@ body {
 
 #projects {
     margin: 100px 0 20px 0; 
-    height: 100px;
+    height: max-content;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    align-items: center;
 }
 
 #project1 {
-    width: max-content;
-    margin-left: 25%;
-    float: left;
+    width: fit-content;
+    height: max-content;
 } 
 
 #project2 {
-    width: max-content;
-    margin-right: 25%;
-    float: right;
+    width: fit-content;
+    height: max-content;
 } 
 
 #prof_title {
