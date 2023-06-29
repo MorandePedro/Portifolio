@@ -4,22 +4,21 @@ html {
 
 body {
     margin: auto;
-
     background: linear-gradient(332deg,rgb(58, 58, 58) 20%,
      rgb(34, 34, 34) 80%);
     background-repeat: no-repeat;
 }
 
-
 #menu {
     background-color: rgb(51, 51, 51);
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 80px;
     margin: auto;
-    padding: 20px;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+    display: flex;
+    align-items: center;
 }
 
 #navigation {
@@ -29,11 +28,17 @@ body {
     font-weight: bold;
     width: max-content;
     height: auto;
-    
+    margin: auto;
 }
 
 #nav_home {
     color: white; 
+    margin-right: 15px; 
+    text-decoration: none;
+}
+
+#nav_home:hover {
+    color: rgb(255, 244, 184);
     margin-right: 15px; 
     text-decoration: none;
 }
@@ -44,10 +49,22 @@ body {
     text-decoration: none;
 }
 
+#nav_prof:hover {
+    color: rgb(255, 244, 184);
+    margin-right: 15px; 
+    text-decoration: none;
+}
+
 #nav_pers {
     color: white; 
     margin-right: 15px; 
     text-decoration: none;
+}
+
+#nav_pers:hover {
+    margin-right: 15px; 
+    text-decoration: none;
+    color: rgb(255, 244, 184);
 }
 
 #nav_contact {
@@ -55,9 +72,14 @@ body {
     text-decoration: none;
 }
 
+#nav_contact:hover {
+    color: white; 
+    text-decoration: none;
+    color: rgb(255, 244, 184); 
+}
+
 #welcome {
     margin: auto;
-    margin-top: 50px;
     width: max-content;
     font-family:'Lucida Sans', 
     'Lucida Sans Regular', 
@@ -71,6 +93,43 @@ body {
     width: max-content; 
     height: max-content; 
     margin: 0 50px 0 0;
+}
+
+#tools_logos {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+}
+
+#python_logo {
+    width: 60px;    
+    height: 60px;
+    margin: 0 10px 0 30px;
+}
+
+#js_logo {
+    width: 60px;    
+    height: 60px;
+    margin: 0 10px;
+}
+
+#html_logo {
+    width: 60px;    
+    height: 60px;
+    margin: 0 10px;
+}
+
+#css_logo {
+    width: 60px;    
+    height: 60px;
+    margin: 0 10px;
+}
+
+#c_logo {
+    width: 60px;    
+    height: 60px;
+    margin: 0 10px;
 }
 
 #welcome_image {
@@ -112,7 +171,7 @@ body {
 
 .separador {
     background-color: rgb(117, 117, 117);
-    width: 100vw;
+    width: 100%;
     height: 2px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -131,10 +190,9 @@ body {
 }
 
 #projects {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 100px 0 20px 0; 
     height: 100px;
-    width: 100vw;
+    width: 100%;
 }
 
 #project1 {
@@ -292,7 +350,7 @@ body {
 }
 
 #game {
-    margin: 50px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 #game_title {
@@ -340,6 +398,10 @@ body {
     width: max-content;
     height: max-content;
     margin: auto;
+}
+
+#contact {
+    margin: 0 0 20px 0;
 }
 
 #contact_links {
