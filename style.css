@@ -11,11 +11,6 @@ body {
 }
 
 
-
-
-
-
-
 #menu {
     background-color: rgb(51, 51, 51);
     width: 100vw;
@@ -37,17 +32,28 @@ body {
     
 }
 
+#nav_home {
+    color: white; 
+    margin-right: 15px; 
+    text-decoration: none;
+}
 
+#nav_prof {
+    color: white; 
+    margin-right: 15px; 
+    text-decoration: none;
+}
 
+#nav_pers {
+    color: white; 
+    margin-right: 15px; 
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
+#nav_contact {
+    color: white; 
+    text-decoration: none;
+}
 
 #welcome {
     margin: auto;
@@ -57,6 +63,26 @@ body {
     'Lucida Sans Regular', 
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.74);
+    display: flex; 
+    align-items: center;
+}
+
+#welcome_text {
+    width: max-content; 
+    height: max-content; 
+    margin: 0 50px 0 0;
+}
+
+#welcome_image {
+    width: max-content; 
+    height: max-content; 
+    font-size: 0;
+}
+
+#my_photo {
+    height: 400px; 
+    width: 400px; 
+    border-radius: 50%;
 }
 
 .text1 {
@@ -66,6 +92,10 @@ body {
     'Lucida Sans Regular', 
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.74);
+}
+
+.text1 .carrer_list {
+    font-size: 15px;
 }
 
 #hello {
@@ -80,17 +110,6 @@ body {
     font-size: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .separador {
     background-color: rgb(117, 117, 117);
     width: 100vw;
@@ -98,18 +117,6 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 #study {
     margin: auto;
@@ -122,21 +129,6 @@ body {
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.74);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #projects {
     margin-top: 20px;
@@ -157,34 +149,18 @@ body {
     float: right;
 } 
 
-
-
-
-
-
-
-
-
-
-
-
+#prof_title {
+    text-align: center;
+}
 
 #professional {
     font-size: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+#aboutme_title {
+    text-align: center; 
+    margin-bottom: 20px;
+}
 
 #studying {
     width: max-content;
@@ -201,9 +177,8 @@ body {
 }
 
 #book_logo {
-    width: 35px; 
-    height: 35px;
-    float: right;
+    height: 32px; 
+    width: 32px;
 }
 
 #develop {
@@ -211,6 +186,15 @@ body {
     display: flex;
     align-items: center;
     margin: auto;
+}
+
+#check {
+    height: 35px; 
+    width: 35px;
+}
+
+#develop_text {
+    margin: 9px;
 }
 
 #puzzles {
@@ -222,39 +206,54 @@ body {
 }
 
 #rubiks_text {
+    margin: 9px;
     display: inline-block;
 }
 
-#rubiks_logo {
+#rubiks {
     width: 40px; 
     height: 40px;
     display: inline-block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#rubiks_image {
+    width: 40px; 
+    height: 40px;
+}
 
 #hobbies {
     margin-top: 40px;
+}
+
+#freetime_title {
+    width: max-content; 
+    height: max-content; 
+    margin: auto;
+}
+
+#activities {
+    margin: 20px 0 0 0
+}
+
+#jiujitsu_title {
+    width: max-content; 
+    height: max-content; 
+    display: flex; 
+    align-items: center; 
+    margin: 0 auto 0 auto;
+}
+
+#jiujitsu_unicode {
+    font-size: 40px;
+    margin: 0px;
+
+}
+
+#jiujitsu_text {
+    font-size: 26px; 
+    width: max-content; 
+    height: max-content; 
+    margin: 0px 10px;
 }
 
 #jiujitsu_images {
@@ -263,23 +262,79 @@ body {
     margin: 10px auto;
 }
 
+#jiujitsu_img1 {
+    width: 400px;
+    height: 500px;
+}
 
+#jiujitsu_img2 {
+    width: 328px;
+    height: 500px;
+}
 
+#jiujitsu_desc {
+    font-size: 18px; 
+    width: max-content; 
+    margin: auto;
+}
 
+#champion_unicode {
+    font-size: 35px; 
+    width: max-content; 
+    height: max-content; 
+    display: flex; 
+    align-items: center; 
+    margin: auto;
+}
 
+#medal {
+    margin:0;
+}
 
+#game {
+    margin: 50px 0 0 0;
+}
 
+#game_title {
+    width: max-content; 
+    height: max-content; 
+    display: flex;
+    align-items: center; 
+    margin: 10px auto;
+}
 
+#controller_unicode {
+    font-size: 40px;
+}
 
+#game_text {
+    font-size: 26px; 
+    width: max-content; 
+    height: max-content; 
+    margin: 0 10px;
+}
 
+#game_images {
+    width: max-content; 
+    height: max-content; 
+    margin: auto;
+}
 
+#game_img1 {
+    width: 326px; 
+    height: 500px;
+}
 
+#game_img2 {
+    width: 624px; 
+    height: 500px;
+}
 
-
-
-
-
-
+#game_desc {
+    font-size: 18px;
+    width: max-content; 
+    margin: auto;
+}
 
 #reachme {
     width: max-content;
