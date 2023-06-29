@@ -298,6 +298,7 @@ body {
     height: max-content;
     display: inline-block;
     margin: 9px 9px 9px 9px;
+    text-align: center;
 }
 
 #book_logo {
@@ -319,6 +320,7 @@ body {
 
 #develop_text {
     margin: 9px;
+    text-align: center;
 }
 
 #puzzles {
@@ -332,6 +334,7 @@ body {
 #rubiks_text {
     margin: 9px;
     display: inline-block;
+    text-align: center;
 }
 
 #rubiks {
