@@ -94,46 +94,43 @@ body {
 }
 
 #welcome_text {
-    width: max-content; 
+    width: fit-content; 
     height: max-content; 
 }
 
 #tools_logos {
     width: fit-content;
     height: max-content;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: wrap;
-    align-items: center;
+    margin: 0;
 }
 
 #python_logo {
-    width: 60px;    
-    height: 60px;
-    margin: 0 10px 0 30px;
+    width: 4vw;    
+    height: 4vw;
+    margin: 0 10px 0 20px;
 }
 
 #js_logo {
-    width: 60px;    
-    height: 60px;
+    width: 4vw;    
+    height: 4vw;
     margin: 0 10px;
 }
 
 #html_logo {
-    width: 60px;    
-    height: 60px;
+    width: 4vw;    
+    height: 4vw;
     margin: 0 10px;
 }
 
 #css_logo {
-    width: 60px;    
-    height: 60px;
+    width: 4vw;    
+    height: 4vw;
     margin: 0 10px;
 }
 
 #c_logo {
-    width: 60px;    
-    height: 60px;
+    width: 4vw;    
+    height: 4vw;
     margin: 0 10px;
 }
 
@@ -165,14 +162,37 @@ body {
 
 #hello {
     font-size: 40px;  
+    color: white;
+    font-family:'Lucida Sans', 
+    'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.74);
+    width: fit-content;
+    margin: 0;
 }
 
 #iam {
     font-size: 55px;
+    color: white;
+    font-family:'Lucida Sans', 
+    'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.74);
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
 }
 
 #wel-port {
     font-size: 30px;
+    color: white;
+    font-family:'Lucida Sans', 
+    'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.74);
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
 }
 
 .separador {
