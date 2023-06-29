@@ -80,7 +80,7 @@ body {
 }
 
 #welcome {
-    margin: auto;
+    margin: 30px auto;
     width: 100%;
     height: max-content;
     font-family:'Lucida Sans', 
@@ -105,30 +105,40 @@ body {
 }
 
 #python_logo {
+    min-width: 30px;
+    min-height: 30px;
     width: 4vw;    
     height: 4vw;
     margin: 0 10px 0 20px;
 }
 
 #js_logo {
+    min-width: 30px;
+    min-height: 30px;
     width: 4vw;    
     height: 4vw;
     margin: 0 10px;
 }
 
 #html_logo {
+    min-width: 30px;
+    min-height: 30px;
     width: 4vw;    
     height: 4vw;
     margin: 0 10px;
 }
 
 #css_logo {
+    min-width: 30px;
+    min-height: 30px;
     width: 4vw;    
     height: 4vw;
     margin: 0 10px;
 }
 
 #c_logo {
+    min-width: 30px;
+    min-height: 30px;
     width: 4vw;    
     height: 4vw;
     margin: 0 10px;
@@ -141,8 +151,8 @@ body {
 }
 
 #my_photo {
-    height: 400px; 
-    width: 400px ; 
+    height: 300px; 
+    width: 300px ; 
     border-radius: 50%;
     margin: auto;
 }
@@ -156,12 +166,37 @@ body {
     text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.74);
 }
 
-.text1 .carrer_list {
-    font-size: 15px;
+.carrer_list {
+    font-size: 1.2vw;
+    margin: auto;
+    color: white;
+    font-family:'Lucida Sans', 
+    'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.74);
 }
 
-#hello {
-    font-size: 40px;  
+.job_title {
+    font-size: 1.8vw;
+    margin: 20px auto 0 0;
+    color: white;
+    font-family:'Lucida Sans', 
+    'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.74);
+}
+
+.job_description {
+    font-size: 1.4vw;
+    margin: auto;
+    color: white;
+    font-family:'Lucida Sans', 
+    'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.74);
+}
+
+#hello { 
     color: white;
     font-family:'Lucida Sans', 
     'Lucida Sans Regular', 
@@ -172,7 +207,6 @@ body {
 }
 
 #iam {
-    font-size: 55px;
     color: white;
     font-family:'Lucida Sans', 
     'Lucida Sans Regular', 
@@ -184,7 +218,6 @@ body {
 }
 
 #wel-port {
-    font-size: 30px;
     color: white;
     font-family:'Lucida Sans', 
     'Lucida Sans Regular', 
@@ -237,6 +270,7 @@ body {
 
 #prof_title {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #professional {
@@ -318,7 +352,7 @@ body {
 }
 
 #activities {
-    margin: 20px 0 0 0
+    margin: 20px 0 0 0;
 }
 
 #jiujitsu_title {
@@ -343,7 +377,7 @@ body {
 }
 
 #jiujitsu_images {
-    width: 100%;
+    width: 70%;
     height: max-content;
     margin: 10px auto;
     display: flex;
@@ -411,7 +445,7 @@ body {
 }
 
 #game_images {
-    width: 100%; 
+    width: 70%; 
     height: max-content; 
     margin: auto;
     display: flex;
@@ -492,3 +526,51 @@ body {
     height: 40px; 
     width: 40px;
 }
+
+@media screen and (min-width: 601px) {
+    #hello {
+      font-size: 60px;
+    }
+    #iam {
+        font-size: 70px; 
+    }
+    #wel-port {
+        font-size: 40px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    #hello {
+      font-size: 30px;
+    }
+    #iam {
+        font-size: 35px;
+      }
+      #wel-port {
+        font-size: 30px;
+    }
+    #my_photo {
+        width: 200px;
+        height: 200px;
+    }
+    #projects {
+        font-size: 10px;
+    }
+
+    #prof_title{
+        font-size: 20px;
+    }
+
+    .job_title {
+        font-size: 15px;
+    }
+
+    .job_description {
+        font-size: 10px;
+    }
+
+    .carrer_list {
+        font-size: 10px;
+    }
+  }
