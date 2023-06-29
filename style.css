@@ -167,7 +167,7 @@ body {
 }
 
 .carrer_list {
-    font-size: 1.2vw;
+    font-size: 12px;
     margin: auto;
     color: white;
     font-family:'Lucida Sans', 
@@ -177,7 +177,7 @@ body {
 }
 
 .job_title {
-    font-size: 1.8vw;
+    font-size: 20px;
     margin: 20px auto 0 0;
     color: white;
     font-family:'Lucida Sans', 
@@ -187,7 +187,7 @@ body {
 }
 
 .job_description {
-    font-size: 1.4vw;
+    font-size: 15px;
     margin: auto;
     color: white;
     font-family:'Lucida Sans', 
@@ -275,6 +275,10 @@ body {
 
 #professional {
     font-size: 20px;
+}
+
+#xp {
+    margin: 0 0 0 40px;
 }
 
 #aboutme_title {
@@ -527,6 +531,11 @@ body {
     width: 40px;
 }
 
+#email {
+    width: fit-content;
+    margin: 10px auto;
+}
+
 @media screen and (min-width: 601px) {
     #hello {
       font-size: 60px;
@@ -572,5 +581,78 @@ body {
 
     .carrer_list {
         font-size: 10px;
+    }
+
+    #aboutme_title{
+        font-size: 20px;
+    }
+
+    #study_text {
+        font-size: 15px;
+    }
+
+    #book_logo {
+        height: 25px; 
+        width: 25px;
+    }
+
+    #develop_text {
+        font-size: 15px;
+    }
+
+    #check {
+        height: 25px; 
+        width: 25px;
+    }
+
+    #rubiks_text {
+        font-size: 15px;
+    }
+
+    #rubiks_image {
+        height: 25px; 
+        width: 25px;
+    }
+
+    #freetime_title{
+        font-size: 20px;
+    }
+
+    #jiujitsu_text{
+        font-size: 20px;
+    }
+
+    #jiujitsu_unicode{
+        font-size: 25px;
+    }
+
+    #jiujitsu_img1{
+        width: 240px;
+        height: 300px;
+    }
+
+    #jiujitsu_img2{
+        width: 197px;
+        height: 300px;
+    }
+
+    #jiujitsu_desc{
+        font-size: 13px;
+    }
+
+    #champion_unicode {
+        font-size: 25px;
+    }
+
+    #game_text {
+        font-size: 20px;
+    }
+
+    #controller_unicode {
+        font-size: 25px;
+    }
+
+    #game_desc {
+        font-size: 13px;
     }
   }
