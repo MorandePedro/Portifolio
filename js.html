@@ -14,11 +14,10 @@
     </style>
 </head>
 <body>
-    <canvas id="canvas" width="200" height="200" style="background-color: white;"></canvas>
+    <canvas id="canvas" width="200" height="200"></canvas>
     <br>
-    <button id="predict-button">Prever</button>
+    <button id="download" onclick="down_image()">Prever</button>
     <br>
-    <div id="prediction"></div>
 
     <script>
         var canvas = document.getElementById('canvas');
@@ -30,25 +29,43 @@
         canvas.addEventListener('mouseup', stopDrawing);
         canvas.addEventListener('mouseout', stopDrawing);
 
+        context.fillStyle = "white"
+        context.fillRect(0,0, canvas.width, canvas.height)
+
         function startDrawing(e) {
             isDrawing = true;
             draw(e);
+            context.stroke();
         }
 
         function draw(e) {
             if (!isDrawing) return;
-            context.lineWidth = 2;
-            context.lineCap = 'round';
-            context.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
-            context.stroke();
-            context.beginPath();
-            context.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
-        }
+                context.lineWidth = 20;
+                context.lineCap = 'round';
+                context.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+                context.stroke();
+                context.beginPath();
+                context.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+                context.stroke();
+            }
 
         function stopDrawing() {
             isDrawing = false;
             context.beginPath();
+            context.stroke();
         }
+
+        function down_image(e) {
+            console.log(canvas.toDataURL());
+            const link = document.createElement('a');
+            link.download = 'download.jpeg'
+            link.href = canvas.toDataURL();
+            link.click();
+            link.delete;
+        };
+
+        const download = getElementById('download')
+
     </script>
 </body>
 </html>
