@@ -9,63 +9,16 @@
             background-color: rgb(89, 91, 214);
             font: normal 20pt Arial;
             color: white;
-
         }
     </style>
 </head>
 <body>
-    <canvas id="canvas" width="200" height="200"></canvas>
-    <br>
-    <button id="download" onclick="down_image()">Prever</button>
-    <br>
-
-    <script>
-        var canvas = document.getElementById('canvas');
-        var context = canvas.getContext('2d');
-        var isDrawing = false;
-
-        canvas.addEventListener('mousedown', startDrawing);
-        canvas.addEventListener('mousemove', draw);
-        canvas.addEventListener('mouseup', stopDrawing);
-        canvas.addEventListener('mouseout', stopDrawing);
-
-        context.fillStyle = "white"
-        context.fillRect(0,0, canvas.width, canvas.height)
-
-        function startDrawing(e) {
-            isDrawing = true;
-            draw(e);
-            context.stroke();
-        }
-
-        function draw(e) {
-            if (!isDrawing) return;
-                context.lineWidth = 20;
-                context.lineCap = 'round';
-                context.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
-                context.stroke();
-                context.beginPath();
-                context.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
-                context.stroke();
-            }
-
-        function stopDrawing() {
-            isDrawing = false;
-            context.beginPath();
-            context.stroke();
-        }
-
-        function down_image(e) {
-            console.log(canvas.toDataURL());
-            const link = document.createElement('a');
-            link.download = 'download.jpeg'
-            link.href = canvas.toDataURL();
-            link.click();
-            link.delete;
-        };
-
-        const download = getElementById('download')
-
-    </script>
+    <form>
+        <canvas id="canvas" width="200" height="200"></canvas>
+        <br>
+        <button id="download" type="submit">Prever</button>
+        <br>
+    </form>
+    <script src="draw_canvas"></script>
 </body>
 </html>
